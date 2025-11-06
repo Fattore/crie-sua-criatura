@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 * {
   box-sizing: border-box;
@@ -22,3 +20,189 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Classes customizadas - usando valores CSS diretos para Tailwind v4 */
+.monster-sheet {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #e5e7eb;
+}
+
+.monster-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.monster-subtitle {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.1em;
+}
+
+.stat-block {
+  background-color: #030712;
+  border: 1px solid #1f2937;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.stat-header-bar {
+  background-color: #dc2626;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.stat-header-text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.vd-badge {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #030712;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #374151;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.vd-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9ca3af;
+  margin-right: 0.25rem;
+}
+
+.vd-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.stat-type {
+  padding: 0.5rem 1rem;
+  background-color: #030712;
+}
+
+.stat-type-text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-section {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #374151;
+}
+
+.stat-section:last-child {
+  border-bottom: none;
+}
+
+.stat-section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.stat-content {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.stat-content-small {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.375;
+}
+
+.attribute-container {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  min-width: 60px;
+}
+
+.attribute-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9ca3af;
+  letter-spacing: 0.05em;
+}
+
+.attribute-value {
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.monster-description {
+  color: #d1d5db;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.monster-description p {
+  margin-bottom: 1rem;
+}
+
+.monster-description p:last-child {
+  margin-bottom: 0;
+}
+
+.action-item {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+}
+
+.action-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.action-damage {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-top: 0.125rem;
+}
+
+.action-description {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  line-height: 1.375;
+}
+
+.stat-block-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
